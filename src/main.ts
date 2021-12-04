@@ -16,7 +16,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.use(
-    '/api/v1/docs',
+    'api/v1/gateway/docs',
     authenticationDoc({
       challenge: true,
       users: { admin: configService.get<string>('SWAGGER_PASSWOD') },

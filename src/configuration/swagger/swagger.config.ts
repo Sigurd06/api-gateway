@@ -14,7 +14,7 @@ export class SwaggerConfig {
       .build();
 
     const document = SwaggerModule.createDocument(app, setting);
-    SwaggerModule.setup('api/v1/docs', app, document, {
+    SwaggerModule.setup('api/v1/gateway/docs', app, document, {
       customCssUrl:
         'https://cdn.jsdelivr.net/npm/swagger-ui-themes@3.0.1/themes/3.x/theme-material.css',
       explorer: true,
