@@ -29,7 +29,7 @@
     "@nestjs/schedule": "^1.0.2",
     "@nestjs/swagger": "^4.0.9",
     "@nestjs/typeorm": "^7.1.5",
-    "class-transformer": "^0.4.0",
+    "class-transformer": "0.4.0",
     "class-validator": "^0.13.1",
     "express-basic-auth": "^1.2.0",
     "reflect-metadata": "^0.1.13",
