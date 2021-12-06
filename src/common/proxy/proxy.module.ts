@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { ClientProxySerivce } from './client.service';
+import { ClientProxyService } from './client.service';
 
 @Module({
   imports: [ConfigModule],
-  providers: [ClientProxySerivce],
-  exports: [ClientProxySerivce],
+  providers: [ClientProxyService],
+  exports: [ClientProxyService],
 })
 export class ProxyModule {}
