@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { ClientProxySerivce } from '../../common/proxy/client.service';
+import { ClientProxyService } from '../../common/proxy/client.service';
 
 @Injectable()
 export class UsersService {
-  constructor(private readonly clientProxy: ClientProxySerivce) {}
+  constructor(private readonly clientProxy: ClientProxyService) {}
   private clientProxyUsers = this.clientProxy.clientProxyUsers();
 
   get(data: string) {
